@@ -17,14 +17,19 @@ html {
 }
 
 body {
-  background-color: gray;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  background-image: url('/images/frank_bg.png');
+  background-size: cover;
+  font-family: 'Zen Kurenaido', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+a {
+  color: white;
 }
 
 main {
@@ -74,20 +79,19 @@ img {
   flex-direction: row;
   font-size: 24px;
   margin: 0;
+  color: white;
 }
 
 #like-and-subscribe > :first-child {
   width: 50%;
   background-color: #329752;
   padding: 8px;
-  margin: 20px 0 0 0;
 }
 
 #like-and-subscribe > :last-child {
   width: 50%;
   background-color: #88e6a6;
   padding: 8px;
-  margin: 20px 0 0 0;
 }
 
 .far {
@@ -126,7 +130,7 @@ img {
     grid-area: name;
     text-align: left;
     margin: 0;
-    font-size: 2.3rem;
+    font-size: 3rem;
     padding: 20px 0 0 25px;
     background-color: #dcf3fc;
   }
@@ -147,23 +151,22 @@ img {
     color: #2d5868;
     background-color: #dcf3fc;
     font-size: 1.6rem;
-    border-left: 4px solid #329752;
-    padding: 0 0 0 22px;
-    margin: -15px 0 0 0;
+    padding: 0 0 0 25px;
+    margin: -25px 0 0 0;
   }
 
   
   #like-and-subscribe {
     grid-area: icons;
-    justify-content: space-evenly;
+    font-size: 55px;
   }
-  
+
+
   #schedule {
     text-align: left;
     grid-area: schedule;
     font-size: 1.2rem;
     height: 100%;
-    /* line-height: 5px; */
     background-color: #dcf3fc;
     padding: 0 0 5px 20px;
     margin: 0;
